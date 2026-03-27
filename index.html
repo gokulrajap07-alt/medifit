@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="FitMed AI - Next-generation AI-powered healthcare ecosystem with fitness intelligence, health scanning, and personalized diagnostics." />
+    <title>FitMed AI — Futuristic Healthcare Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="file-protocol-warning" style="display: none; padding: 40px; text-align: center; font-family: sans-serif; background: #0f172a; color: white; height: 100vh;">
+      <h1 style="color: #ef4444; font-size: 2rem; margin-bottom: 20px;">⚠️ STOP! App Cannot Run This Way</h1>
+      <p style="font-size: 1.2rem; color: #94a3b8; max-width: 600px; margin: 0 auto; line-height: 1.6;">
+        You have opened this file directly from your computer (using the <b>file://</b> protocol). FitMed AI is a modern React application and <b>cannot</b> be executed this way due to browser security restrictions.
+        <br><br>
+        <span style="color: #38bdf8; font-weight: bold;">How to fix this:</span>
+        <br>
+        Please go to your project folder and double-click the green <b>START_APP.bat</b> file I created for you. It will start the server and open the app correctly!
+      </p>
+    </div>
+    
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    
+    <script>
+      // Detect if opened via double-click in Windows Explorer
+      if (window.location.protocol === 'file:') {
+        document.getElementById('root').style.display = 'none';
+        document.getElementById('file-protocol-warning').style.display = 'block';
+      }
+    </script>
+  </body>
+</html>
